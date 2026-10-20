@@ -32,12 +32,17 @@ async function connectWallet() {
     currentAccount = (await signer.getAddress()).toLowerCase();
     contract = new ethers.Contract(CONTRACT_ADDRESS, CONTRACT_ABI, signer);
     const network = await provider.getNetwork();
-    el("walletStatus").textContent = shortAddress(currentAccount);
-    el("networkStatus").textContent = `${network.name} (${network.chainId})`;
-    el("connectButton").textContent = "Wallet connected";
-    await refreshData();
-    notify("MetaMask connected successfully.");
-  } catch (error) { notify(readableError(error), true); }
+
+if (network.chainId !== 1337n) {
+  contract = null;
+
+  notify(
+    `Wrong network! Current chain ID: ${network.chainId}. Switch to Ganache Local.`,
+    true
+  );
+
+  return;
+} catch (error) { notify(readableError(error), true); }
 }
 
 async function runTransaction(send, successMessage) {
