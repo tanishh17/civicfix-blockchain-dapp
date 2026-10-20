@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CivicFix Community Repair Registry</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">Ethereum DApp</p>
+      <h1>CivicFix</h1>
+      <p class="subtitle">A transparent registry for community repair requests.</p>
+    </div>
+    <button id="connectButton">Connect MetaMask</button>
+  </header>
+
+  <main>
+    <section class="status-bar" aria-live="polite">
+      <div><span>Wallet</span><strong id="walletStatus">Not connected</strong></div>
+      <div><span>Network</span><strong id="networkStatus">-</strong></div>
+      <div><span>Community</span><strong id="communityName">-</strong></div>
+      <div><span>Completed</span><strong id="completedCount">0</strong></div>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <div><p class="eyebrow">Publish on-chain</p><h2>Report a repair need</h2></div>
+        <p>Each request becomes a verifiable blockchain record.</p>
+      </div>
+      <form id="requestForm">
+        <label>Title<input id="title" minlength="5" maxlength="80" required placeholder="Broken streetlight near library"></label>
+        <label>Location<input id="location" minlength="3" maxlength="80" required placeholder="North gate, community library"></label>
+        <label class="full">Details<textarea id="details" minlength="10" maxlength="500" required placeholder="Describe the fault and any useful access information."></textarea></label>
+        <button class="primary full" type="submit">Create repair request</button>
+      </form>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <div><p class="eyebrow">Blockchain data</p><h2>Community requests</h2></div>
+        <button id="refreshButton" class="secondary">Refresh</button>
+      </div>
+      <div id="requestList" class="card-grid"><p class="empty">Connect MetaMask to load requests.</p></div>
+    </section>
+  </main>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
