@@ -14,6 +14,8 @@ Add the six genuine screenshots required by the assignment using these exact fil
 4. `04-successful-transaction.png`
    <img width="1679" height="970" alt="F9070490-8F81-4FC8-8D8C-7A34CC4E1541" src="https://github.com/user-attachments/assets/38a06733-4db7-4560-9df9-70250666d852" />
 
-5. `06-blockchain-data-ui.png`
+5. `05-blockchain-data-ui.png`
 <img width="998" height="391" alt="1F228AA4-8B8A-4F46-AB61-B87774B496B0" src="https://github.com/user-attachments/assets/461ececb-cef3-45e3-8ae4-9838ac24fa82" />
 
+6. `06-transaction.png`
+<img width="1207" height="796" alt="image" src="https://github.com/user-attachments/assets/a3aed612-adc7-4c0b-be54-35328a2a1ef3" />
