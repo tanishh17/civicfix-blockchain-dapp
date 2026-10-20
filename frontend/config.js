@@ -1,5 +1,5 @@
 // Replace after deploying CivicFix.sol through Remix IDE.
-const CONTRACT_ADDRESS = "PASTE_DEPLOYED_CONTRACT_ADDRESS_HERE";
+const CONTRACT_ADDRESS = "0xBA3ccee216D93d4fD784c6C4620659F333A8812b";
 
 const CONTRACT_ABI = [
   "function communityName() view returns (string)",
