@@ -1,16 +1,12 @@
-# Deployment record
-
-Complete this record immediately after deploying through Remix IDE.
+# Deployment Record
 
 - Contract: `CivicFix.sol`
 - Solidity compiler: `0.8.24`
-- Constructor argument: `VIT Community` (or the actual community name used)
-- Network: `[Ganache or Ethereum test network]`
-- Chain ID: `[record after deployment]`
-- Deployer account: `[public wallet address only]`
-- Deployed contract address: `[record after deployment]`
-- Deployment transaction hash: `[record after deployment]`
-- Deployment date and time: `[record after deployment]`
-- Remix environment: `[Injected Provider - MetaMask / Dev - Ganache Provider]`
-
-Never place a private key, seed phrase, password, or RPC credential in this repository.
+- Constructor argument: `MIT Community`
+- Network: `Ganache Local`
+- Chain ID: `1337`
+- Deployer account: `[VERIFY IN REMIX]`
+- Deployed contract address: `0xBA3ccee216D93d4fD784c6C4620659F333A8812b`
+- Deployment transaction hash: `[COPY FROM REMIX OR GANACHE]`
+- Deployment date and time: `20 October 2026, [VERIFY EXACT TIME]`
+- Remix environment: `Injected Provider - MetaMask`
